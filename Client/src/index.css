@@ -1,8 +1,60 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #ff5480;
+  --secondary: #e4e4e4;
+  --success: #9283e0;
+  --danger: #00dc90;
+  --warning: #ffd581;
+}
 body {
-  font-family: "poppins";
+  font-family: "Open sans";
+  @apply bg-gray-50;
+}
+
+.textDefault {
+  @apply text-[#000000];
+}
+.textPassive {
+  @apply text-[#9B9B9B];
+}
+.textQuote {
+  @apply text-[#9283e0];
+}
+.textLight {
+  @apply text-gray-600;
+}
+.textPrimary {
+  color: var(--primary);
+}
+.textSecondary {
+  color: var(--secondary);
+}
+.textSuccess {
+  color: var(--success);
+}
+.textDanger {
+  color: var(--danger);
+}
+.textWarning {
+  color: var(--warning);
+}
+.bgPrimary {
+  background-color: var(--primary);
+}
+.bgSecondary {
+  background-color: var(--secondary);
+}
+.bgSuccess {
+  background-color: var(--success);
+}
+.bgDanger {
+  background-color: var(--danger);
+}
+.bgWarning {
+  background-color: var(--warning);
 }
