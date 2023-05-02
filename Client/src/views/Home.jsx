@@ -5,9 +5,50 @@ import img3 from "../assets/categories/seo.svg";
 import img4 from "../assets/categories/popular.svg";
 import img5 from "../assets/categories/essentials.svg";
 import thumbnail from "../assets/thumbnail-1.svg";
+import darkThumbnail from "../assets/darkThumbnail.svg";
 export default function Home() {
   return (
     <div>
+      <div className="flex items-start my-20 gap-10 h-96">
+        <div className="p-10 space-y-5 w-2/3 relative h-full overflow-hidden  rounded-md text-white ">
+          <img
+            src={darkThumbnail}
+            alt="Card 1"
+            class="w-full h-full rounded-md object-cover overflow-hidden absolute top-0 left-0 -z-10"
+          />
+
+          <h1 className="text-lg uppercase">By Bruce wayne in ispiration</h1>
+          <h1 className="text-3xl">
+            How to accept rejection gracefully and use it to grow.
+          </h1>
+          <p className="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consectetur nulla fuga in quaerat minus, laboriosam reiciendis sed
+            vitae accusamus voluptates ex accusantium corrupti delectus officia.
+          </p>
+        </div>
+
+        <div className="space-y-3 w-1/3">
+          <div className="flex items-center justify-between pb-5 border-b-2 w-full">
+            <p className="">New</p>
+            <p className="textLight">View all new</p>
+          </div>
+
+          <div className="space-y-5">
+            {[1, 2, 3, 4].map((e) => {
+              return (
+                <div className="">
+                  <p className="textLight">SEP 05, 2023</p>
+                  <p className="font-semibold textDark">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
       {/* Reading List Carousal */}
       <div class="flex flex-col">
         <div class="flex justify-between items-center mb-4">

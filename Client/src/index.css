@@ -15,7 +15,9 @@ body {
   font-family: "Open sans";
   @apply bg-gray-50;
 }
-
+.textDark {
+  @apply text-gray-700;
+} 
 .textDefault {
   @apply text-[#000000];
 }
