@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "./components/common/Navbar";
+// import { Navbar } from "./components/common/Navbar";
 
 const Layout = (props) => {
   return (
