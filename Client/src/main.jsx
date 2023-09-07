@@ -6,18 +6,18 @@ import Home from "./views/Home";
 import Layout from "./Layout";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: (
-            <Layout>
-                <Home />
-            </Layout>
-        ),
-    },
+  {
+    path: "/",
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
-        <RouterProvider router={router} />
-    </React.StrictMode>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
